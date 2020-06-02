@@ -173,4 +173,12 @@ public class BMITest {
 		app.setWeight(112312);
 		assertEquals(app.calculateBMI(),49347,1);
 	}
+
+	@Test
+	public void shouldReturnThatBMIisNormal3() throws Exception{
+		app.setHeight(200);
+		app.setWeight(74);
+		assertEquals(app.calculateBMI(),18.5,0.0);
+		assertEquals(app.bmiResult(),"Normal");
+	}
 }
