@@ -132,7 +132,7 @@ public class BMITest {
 		assertEquals(app.calculateBMI(),29.9,1);
 		assertEquals(app.bmiResult(),"Overweight");
 	}
-	
+
 	@Test
 	public void shouldReturnThatBMIEquals49347() throws Exception{
 
