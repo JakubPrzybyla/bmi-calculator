@@ -73,4 +73,16 @@ public class GuessTheUnitsTest {
 		assertEquals(gtu.getUnitType(),"US");
 		assertEquals(gtu.getWeight(),1000,1);
 	}
+
+	@Test
+	public void GuessTheUnitsTest15() throws Exception {
+			GuessTheUnits gtu = new GuessTheUnits(1.7, 1000);
+			assertEquals(gtu.getUnitType(), "metric");
+			assertEquals(gtu.getWeight(), 1000,0);
+
+	}
+
+
+
+
 }
