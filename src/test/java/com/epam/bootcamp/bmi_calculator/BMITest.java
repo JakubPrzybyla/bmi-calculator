@@ -164,4 +164,13 @@ public class BMITest {
 			assertEquals(e.getMessage(),"Height is equals or less than zero.");
 		}
 	}
+
+	//killing mutants
+	@Test
+	public void shouldReturnThatBMIEquals49347() throws Exception{
+
+		app.setHeight(10);
+		app.setWeight(112312);
+		assertEquals(app.calculateBMI(),49347,1);
+	}
 }
