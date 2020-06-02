@@ -26,7 +26,7 @@ public class BMITest {
 	public void setup(){
 		app = new App();
 	}
-	
+
 	@Test
 	public void BMITest1() throws Exception{
 		app.setHeight(1.7);
@@ -34,7 +34,7 @@ public class BMITest {
 		assertEquals(app.calculateBMI(),17.3,1);
 		assertEquals(app.bmiResult(),"Thinness");
 	}
-	
+
 	@Test
 	public void BMITest2() throws Exception{
 		try{
@@ -99,7 +99,6 @@ public class BMITest {
 		assertEquals(app.calculateBMI(),25,0.5);
 		assertEquals(app.bmiResult(),"Overweight");
 	}
-
 	@Test
 	public void BMITest9() throws Exception{
 		app.setHeight(200);
@@ -108,12 +107,4 @@ public class BMITest {
 		assertEquals(app.bmiResult(),"Normal");
 	}
 
-	@Test
-	public void BMITest10() throws Exception{
-		app.setHeight(200);
-		app.setWeight(74);
-		assertEquals(app.calculateBMI(),18.5,0.0);
-		assertEquals(app.bmiResult(),"Normal");
-	}
-	
 }
