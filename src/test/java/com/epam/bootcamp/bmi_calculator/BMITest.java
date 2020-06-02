@@ -134,6 +134,14 @@ public class BMITest {
 	}
 
 	@Test
+	public void shouldReturnThatBMIEquals49347() throws Exception{
+
+		app.setHeight(10);
+		app.setWeight(112312);
+		assertEquals(app.calculateBMI(),49347,1);
+	}
+
+	@Test
 	public void shouldReturnThatBMIisHeavilyOverweight() throws Exception{
 		app.setHeight(1);
 		app.setWeight(100);
