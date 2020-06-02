@@ -35,4 +35,34 @@ public class GuessTheUnitsTest {
 		}
 	}
 
+	//added tests
+	@Test
+	public void GuessTheUnitsTest5() throws Exception{
+		GuessTheUnits gtu = new GuessTheUnits(2.5,70);
+		assertEquals(gtu.getUnitType(),"metric");
+	}
+
+	@Test
+	public void GuessTheUnitsTest6() throws Exception{
+		GuessTheUnits gtu = new GuessTheUnits(3,730);
+		assertEquals(gtu.getUnitType(),"metric");
+	}
+
+	@Test
+	public void GuessTheUnitsTest7() throws Exception{
+		GuessTheUnits gtu = new GuessTheUnits(3.1,12);
+		assertEquals(gtu.getUnitType(),"US");
+	}
+
+	@Test
+	public void GuessTheUnitsTest8() throws Exception{
+		GuessTheUnits gtu = new GuessTheUnits(100,80);
+		assertEquals(gtu.getUnitType(),"metric");
+	}
+
+	@Test
+	public void GuessTheUnitsTest9() throws Exception{
+		GuessTheUnits gtu = new GuessTheUnits(10,112312);
+		assertEquals(gtu.getUnitType(),"US");
+	}
 }

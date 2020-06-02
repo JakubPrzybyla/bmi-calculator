@@ -108,6 +108,7 @@ public class BMITest {
 		assertEquals(app.bmiResult(),"Normal");
 	}
 
+	//added tests
 	@Test
 	public void BMITest10() throws Exception{
 		app.setHeight(180);
@@ -141,7 +142,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest14() throws Exception{
+	public void BMITest14() {
 		try {
 			app.setHeight(0);
 			app.setWeight(0);
@@ -153,7 +154,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest15() throws Exception{
+	public void BMITest15() {
 		try {
 			app.setHeight(0);
 			app.setWeight(1);
