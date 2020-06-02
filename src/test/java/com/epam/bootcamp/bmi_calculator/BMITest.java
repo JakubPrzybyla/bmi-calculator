@@ -110,7 +110,7 @@ public class BMITest {
 
 	//added tests
 	@Test
-	public void BMITest10() throws Exception{
+	public void shouldReturnThatBMIisNormal() throws Exception{
 		app.setHeight(180);
 		app.setWeight(80.5);
 		assertEquals(app.calculateBMI(),24.9,1);
@@ -118,7 +118,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest11() throws Exception{
+	public void shouldReturnThatBMIisNormal2() throws Exception{
 		app.setHeight(180);
 		app.setWeight(60);
 		assertEquals(app.calculateBMI(),18.5,1);
@@ -126,7 +126,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest12() throws Exception{
+	public void shouldReturnThatBMIisOverweight() throws Exception{
 		app.setHeight(5.9);
 		app.setWeight(207);
 		assertEquals(app.calculateBMI(),29.9,1);
@@ -134,7 +134,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest13() throws Exception{
+	public void shouldReturnThatBMIisHeavilyOverweight() throws Exception{
 		app.setHeight(1);
 		app.setWeight(100);
 		assertEquals(app.calculateBMI(),100,1);
@@ -142,7 +142,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest14() {
+	public void shouldReturnThatZeroWeightIsInvalid() {
 		try {
 			app.setHeight(0);
 			app.setWeight(0);
@@ -154,7 +154,7 @@ public class BMITest {
 	}
 
 	@Test
-	public void BMITest15() {
+	public void shouldReturnThatZeroHeightIsInvalid() {
 		try {
 			app.setHeight(0);
 			app.setWeight(1);
