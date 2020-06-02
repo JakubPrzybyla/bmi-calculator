@@ -65,4 +65,12 @@ public class GuessTheUnitsTest {
 		GuessTheUnits gtu = new GuessTheUnits(10,112312);
 		assertEquals(gtu.getUnitType(),"US");
 	}
+
+	//killing mutants
+	@Test
+	public void shouldReturn1000WeightInTypeUS() throws Exception{
+		GuessTheUnits gtu = new GuessTheUnits(10,1000);
+		assertEquals(gtu.getUnitType(),"US");
+		assertEquals(gtu.getWeight(),1000,1);
+	}
 }
