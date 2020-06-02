@@ -167,14 +167,6 @@ public class BMITest {
 
 	//killing mutants
 	@Test
-	public void shouldReturnThatBMIEquals49347() throws Exception{
-
-		app.setHeight(10);
-		app.setWeight(112312);
-		assertEquals(app.calculateBMI(),49347,1);
-	}
-
-	@Test
 	public void shouldReturnThatBMIisNormalWhenEquals18_5() throws Exception{
 		app.setHeight(200);
 		app.setWeight(74);

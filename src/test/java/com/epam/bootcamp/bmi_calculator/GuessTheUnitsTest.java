@@ -71,7 +71,7 @@ public class GuessTheUnitsTest {
 	public void shouldReturn1000WeightInTypeUS() throws Exception{
 		GuessTheUnits gtu = new GuessTheUnits(10,1000);
 		assertEquals(gtu.getUnitType(),"US");
-		assertEquals(gtu.getWeight(),1000,1);
+		assertEquals(gtu.getWeight(),1000,0);
 	}
 
 	@Test
